@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auditory Saltation Illusion Demo</title>
+  <link rel="stylesheet" href="dist/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:600" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+ <div class="container">
+    <h1>Auditory Saltation Illusion Demo</h1>
+
+    <p>Uses the Web Audio API*<br>
+    <small>*Needs a current Version of Firefox, Chrome, Opera or Safari</small></p>
+
+    <div class="top">
+      <div class="volumeControl">
+        <div class="volumeSlider"></div>
+        <div class="icon icon-volume-high"></div>
+      </div>
+
+      <div class="ratioControl">
+        <div class="ratioSlider"></div>
+        <div class="text">1:5</div>
+      </div>
+
+    </div>
+
+    <div>
+      <div class="module">
+        <div class="header">Click count</div>
+        <div class="sliderWrap">
+          <div class="slider amountSlider"></div>
+        </div>
+        <span class="amountText"></span>
+      </div>
+
+      <div class="module">
+        <div class="header">Click length</div>
+        <div class="sliderWrap">
+          <div class="slider lengthSlider"></div>
+        </div>
+        <span class="lengthText"></span>
+      </div>
+
+      <div class="module">
+        <div class="header">Inter-Click Interval</div>
+        <div class="sliderWrap">
+          <div class="slider pauseSlider"></div>
+        </div>
+        <span class="pauseText"></span>
+      </div>
+
+      <div class="module">
+        <div class="header">Interaural Level Difference</div>
+        <div class="sliderWrap">
+          <div class="slider ildSlider"></div>
+        </div>
+        <span class="ildText"></span>
+      </div>
+    </div>
+
+    <button class="playBtn"><span class="icon icon-play"></span></button>
+  </div>
+</body>
+  <script src="dist/js/zepto.min.js"></script>
+  <script src="dist/js/nouislider.js"></script>
+  <script src="dist/js/liblink.js"></script>
+  <script src="dist/js/wNumb.js"></script>
+  <script src="dist/js/default.js"></script>
+</html>

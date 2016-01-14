@@ -1,0 +1,139 @@
+// Variables
+@blue: #1f74a6; //#3196df;
+@text-color: #56656C;
+@border-radius: 3px;
+
+// Mixins
+.clearfix(){
+  &:before,
+  &:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+
+  &:after {
+      clear: both;
+  }
+}
+
+
+// Imports
+@import "normalize";
+@import "icons";
+@import "nouislider";
+@import "nouislider.pips.less";
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  /* background: #fff; *///#f3f3f3;
+  color: @text-color;
+  padding: 0 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+
+  .clearfix();
+}
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1{
+  color: @blue;
+  font-family: Montserrat,sans-serif;
+  font-size: 40px;
+}
+
+button, .btn{
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: @border-radius;
+  background: @blue;
+  color: white;
+
+  border: 1px solid @blue;
+  border-bottom-width: 2px;
+  border-top-color: lighten(@blue, 10%);
+  border-bottom-color: darken(@blue, 10%);
+
+  &:hover{
+    cursor: pointer;
+    background: darken(@blue, 5%);
+  }
+
+  &:active{
+    background: darken(@blue, 5%);
+    border-top-color: darken(@blue, 10%);
+    border-bottom-color: lighten(@blue, 10%);
+    box-shadow: 0px 2px 6px 0 rgba(0,0,0,0.2) inset;
+  }
+}
+
+.top{
+  .clearfix();
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .ratioControl{
+    .ratioSlider{
+      float: right;
+      width: 100px;
+      margin: 5px 15px;
+      margin-right: 50px;
+    }
+    .text{
+      float: right;
+      padding-top: 3px;
+      padding-right: 5px;
+    }
+  }
+
+  .volumeControl{
+    .volumeSlider{
+      float: right;
+      width: 100px;
+      margin: 5px 15px;
+    }
+
+    .icon{
+      float: right;
+      padding-top: 5px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.module{
+  .clearfix();
+  margin-top: 10px;
+  .header{
+    margin-bottom: 5px;
+  }
+  .sliderWrap{
+    width: 80%;
+    float: left;
+    padding: 5px 35px;
+    padding-bottom: 40px;
+    padding-left: 0;
+  }
+  input{
+    width: 20%;
+    float: left;
+  }
+
+  &>span{
+    display: inline-block;
+    padding-top: 2px;
+  }
+}
+
+.playBtn{
+  margin-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  float: right;
+}
